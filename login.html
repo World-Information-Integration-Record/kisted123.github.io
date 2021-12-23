@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>WIIR 공식 디스코드</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="login-form">
+
+        <h1>LOGO DESIGN</h1>
+        <form action="">
+            <div class="int-area">
+                <input type="text" name="id" id="id" 
+                autocomplete="off" required>
+                <label for="id">USER NAME</label>
+            </div>
+            <div class="int-area">
+                <input type="password" name="pw" id="pw" 
+                autocomplete="off" required>
+                <label for="pw">PASSWORD</label>
+            </div>
+            <div class="btn-area">
+                <button id="btn"
+                type="submit">LOGIN</button>
+            </div>
+        </form>
+        <div class="caption">
+            <a href="./forgot password.html">FORGOT Password?</a>
+        </div>
+    </section>
+    <script>
+        let id = $('#id');
+        let pw = $('#pw');
+        let btn = $('#btn');
+
+        $(btn).on('click', function() {
+            if($(id).val() == "kisted123"){
+                $(id).next('label').addClass('warning');
+            }
+            else if($(pw).val() == "khu0502**") {
+                $(pw).next('label').addClass('warning')
+            }
+        });
+    </script>
+    <style>
+        body
+        {
+            background-image: url(christmas-6809681_1280.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-color: darkslategray;
+        }
+    </style>
+    <center><h1><a href="index.html">WIIR</a></h1></body></center>
+</html>
