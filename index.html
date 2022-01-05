@@ -14,6 +14,44 @@
             background-size: 200%;
             font: 100; color: rgb(0, 2, 139);
         }
+        button{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
     </style>
     <center><h1><a href="index.html">WIIR</a></h1></center>
     </body>
@@ -34,28 +72,11 @@
             <td><li><a href="./wiir 공식 sns.htm">sns</a></td>
         </tr>
         <tr>
-            <th>로그인/th>
+            <th>로그인</th>
             <td><li><a href="./login.html">로그인</a></li></td>
         </tr>
         <tr>
             <th>정보</th>
-            <td></td>
-        </tr>
-        <tr>
-            <th>싱가포르</th>
-            <td>58</td>
-        </tr>
-        <tr>
-            <th>미국</th>
-            <td>33</td>
-        </tr>
-        <tr>
-            <th>브라질</th>
-            <td>69</td>
-        </tr>
-        <tr>
-            <th>세계평균</th>
-            <td>23</td>
-        </tr>
+            <td><li><a href="./information.htm">정보</a></li></td>
 </table>
 </html>

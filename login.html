@@ -34,10 +34,10 @@
         let btn = $('#btn');
 
         $(btn).on('click', function() {
-            if($(id).val() == "kisted123"){
+            if($(id).val() == ""){
                 $(id).next('label').addClass('warning');
             }
-            else if($(pw).val() == "khu0502**") {
+            else if($(pw).val() == "") {
                 $(pw).next('label').addClass('warning')
             }
         });
