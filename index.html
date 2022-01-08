@@ -9,17 +9,70 @@
     <style>
         body
         {
-            background-image: url(christmas-6809681_1280.png);
+            background-image: url(./background-3017167_960_720.png);
             background-repeat: no-repeat;
-            background-size: 100%;
-            background-color: darkslategray;
+            background-size: 200%;
+            font: 100; color: rgb(0, 2, 139);
         }
+        button{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
     </style>
-    <center><h1><a href="index.html">WIIR</a></h1></body></center>
-<ul>
-    <li><a href="./WIIR DISCORD.html">WIIR 공식 디스코드 링크</a></li>
-    <li><a href="./kakao talk.html">WIIR 공식 카카오톡 링크</a></li>
-    <li><a href="facebook.html">WIIR 공식 페이스북 그룹 링크</a></li>
-    <li><a href="./login.html">로그인</a></li>
-</ul>
+    <center><h1><a href="index.html">WIIR</a></h1></center>
+    </body>
+<table>
+    <caption>      
+        <small>정보</small>
+    </caption>
+        <colgroup>
+        <col style="background: cornflowerblue;">
+        <col>
+        </colgroup>
+        <tr>
+            <th>WIIR공식 SNS</th>
+            <td><li><a href="./wiir 공식 sns.htm">sns</a></td>
+        </tr>
+        <tr>
+            <th>로그인</th>
+            <td><li><a href="./login.html">로그인</a></li></td>
+        </tr>
+        <tr>
+            <th>정보</th>
+            <td><li><a href="./information.htm">정보</a></li></td>
+</table>
 </html>
